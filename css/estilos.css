@@ -1,0 +1,328 @@
+/* Coloco propiedades comunes a toda la página*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Coloco propiedades al contenedor*/
+.contenedor{
+    background-color: blueviolet;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/* Se incluyen propiedades del menú*/
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul li{
+    display: inline-block;
+}
+
+ul li a{ 
+    color: white;
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 30px;
+    margin: 30px;
+}
+
+ul li a:hover{
+    background-color: #111;
+    display: block;
+}
+
+.navbar{
+    color: white !important;
+    width: 500px;
+}
+
+header{
+    width: 100%;
+    background-color:darkgray;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img{ 
+    width: 150px;
+    background-color: orange;
+}
+
+.logoBoos{
+    width: 150px;
+    background-color: orange;
+}
+
+main{
+    padding: 20px;
+}
+.titulo{
+    text-align: center;
+    justify-content: center;
+    font-size: 3rem;
+    color: white;
+}
+
+.descripcion{
+    text-align: center;
+    font-size: 1.8rem;
+    color: bisque;
+    margin: 20px 0;
+}
+
+.imagenes{
+    display: flex;
+    flex-direction: row;
+}
+
+.imagen1{
+    justify-content: center;
+    align-items: center;
+}
+
+.i1{
+    max-width: 100%;
+    max-height: 100%;
+    width: 500px;
+    margin: 20px;
+    padding: 20px;
+    align-items: center;
+
+}
+
+.i2{
+    max-width: 100%;
+    max-height: 76%;
+    width: 500px;
+    margin: 20px;
+    padding: 20px;
+    align-items: center;
+
+}
+
+.i3{
+    max-width: 100%;
+    max-height: 100%;
+    width: 500px;
+    margin: 20px;
+    padding: 20;
+    align-items: center;
+
+}
+
+.parrafo{
+    color: bisque;
+    font-size: 2em;
+    text-align: center;
+}
+
+.p1{
+    font-weight: bold;
+    line-height: 100px;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+footer{
+    bottom: 0px;
+    width: 100%;
+    background: #111;
+}
+
+
+/* Se aplican propiedades de tamaño máximo a las imagenes del footer*/
+
+footer img{
+    width: 50px;
+    height:50px;
+}
+
+footer .contenedorFooter{
+    display: flex;
+    padding: 10px 20px;
+    color: white;
+    
+}
+
+footer .contenedorIzquierdo{
+    padding: 10px;
+    margin: 10px;
+    width: 50%;
+}
+
+footer .contenedorIzquierdo h2{
+    line-height: 0.5rem;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+footer .contenedorIzquierdo p{
+    padding: 10px;
+    text-align: left;
+    color: orange;
+    margin-top: 10px;
+    font-size: 1.1rem;
+}
+
+footer .contenedorCentral{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 10px;
+    max-width: 30%;
+    padding: 10px;
+    margin: 10px;
+    line-height: 30px;
+}
+
+footer .contenidoCentral{
+    color: orange;
+    max-width: 70%;
+    
+}
+
+footer .contenidoCentral h2{
+    color: white;
+}
+
+footer .contenedorDerecho {
+    padding: 10px;
+    color: white;
+    text-align: left;
+    max-width: 40%;
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+.nosotrosTitulo{
+    color: white;
+    font-weight: bold;
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 50px;
+
+}
+
+.nosotrosContenido{
+    color: azure;
+    font-size: 1.2em;
+    line-height: 50px;
+    text-align: center;
+}
+
+
+.nosotrosFoto{
+    width: 75%;
+    height: 70%;
+    padding: 10px   ;
+}
+
+
+.imagenNosotros{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 120px;
+}
+
+.row h-100 pt-5{
+    padding: 25px;
+}
+
+main{
+    background-color: blueviolet;
+}
+
+@media screen and (max-width: 640px) {
+    header {
+      background: blue;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+    }
+  }
+
+@media screen and ( max-width:640px){
+    main{
+        background-color: gray;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: 100%;
+    }
+}
+
+@media screen and (max width:640px)
+{
+    .imagenes{
+        display:flex;
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
+@media screen and ( max-width:640px){
+    footer .contenedorIzquierdo p{
+    
+        min-width: 100%;
+        color:green;
+    }
+}
+
+@media screen and ( max-width:640px){
+    footer .contenidoCentral {
+    
+        min-width: 100%;
+        color: yellow;
+    }
+}
+
+@media screen and ( max-width:640px){
+    footer .contenedorDerecho {
+    
+        min-width: 100%;
+        color: pink;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    header nav ul li a{
+      background-color: darkmagenta;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+    }
+  }
+  
+  @media screen and (min-width: 640px) and (max-width: 1280px) {
+    header {
+      background: red;
+    }
+  }
+  
+  @media screen and (min-width: 640px) and (max-width: 1280px) {
+    main {
+      background: green;
+    }
+  }
+
+  @media screen and (min-width: 640px) and (max-width: 1280px) {
+    imagenes {
+      background: yellow;
+      min-width: 100%;
+    }
+  }
+
+
